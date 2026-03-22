@@ -35,6 +35,13 @@ STATION_MAP: dict[str, str] = {
     "SaoPaulo": "SBGR",      # Guarulhos International
     "Ankara": "LTAC",        # Esenboğa International
     "Wellington": "NZWN",    # Wellington International
+    # East Asia / Greater China
+    "Wuhan": "ZHHH",        # Tianhe International
+    "Shanghai": "ZSPD",     # Pudong International
+    "Chongqing": "ZUCK",    # Jiangbei International
+    "Shenzhen": "ZGSZ",     # Bao'an International
+    "HongKong": "VHHH",     # Hong Kong International
+    "Taipei": "RCTP",       # Taoyuan International
 }
 
 

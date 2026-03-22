@@ -24,6 +24,13 @@ LOCATION_ALIASES = {
     "sao paulo": "SaoPaulo", "saopaulo": "SaoPaulo", "são paulo": "SaoPaulo",
     "ankara": "Ankara", "esenboga": "Ankara",
     "wellington": "Wellington",
+    # East Asia / Greater China
+    "wuhan": "Wuhan", "tianhe": "Wuhan",
+    "shanghai": "Shanghai", "pudong": "Shanghai",
+    "chongqing": "Chongqing", "jiangbei": "Chongqing",
+    "shenzhen": "Shenzhen", "bao'an": "Shenzhen", "baoan": "Shenzhen",
+    "hong kong": "HongKong", "hongkong": "HongKong",
+    "taipei": "Taipei", "taoyuan": "Taipei",
 }
 
 MONTH_MAP = {

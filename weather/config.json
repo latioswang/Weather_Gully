@@ -11,7 +11,7 @@
   "max_trades_per_run": 5,
   "max_retries": 3,
   "retry_base_delay": 1.0,
-  "locations": "NYC,Chicago,Seattle,Atlanta,Dallas,Miami,London,Paris,Seoul,Toronto,BuenosAires,SaoPaulo,Ankara,Wellington",
+  "locations": "NYC,Chicago,Seattle,Atlanta,Dallas,Miami,London,Paris,Seoul,Toronto,BuenosAires,SaoPaulo,Ankara,Wellington,Wuhan,Shanghai,Chongqing,Shenzhen,HongKong,Taipei",
   "log_level": "INFO",
   "state_file": "weather_state.json",
   "max_days_ahead": 7,

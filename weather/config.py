@@ -30,6 +30,13 @@ LOCATIONS = {
     "SaoPaulo": {"lat": -23.4356, "lon": -46.4731, "name": "São Paulo (Guarulhos)", "tz": "America/Sao_Paulo", "station": "SBGR", "unit": "C"},
     "Ankara": {"lat": 40.1281, "lon": 32.9951, "name": "Ankara (Esenboğa)", "tz": "Europe/Istanbul", "station": "LTAC", "unit": "C", "local_model": "icon_seamless"},
     "Wellington": {"lat": -41.3272, "lon": 174.8053, "name": "Wellington (Intl)", "tz": "Pacific/Auckland", "station": "NZWN", "unit": "C"},
+    # --- East Asia / Greater China (°C) ---
+    "Wuhan": {"lat": 30.7838, "lon": 114.2081, "name": "Wuhan (Tianhe)", "tz": "Asia/Shanghai", "station": "ZHHH", "unit": "C", "local_model": "jma_seamless"},
+    "Shanghai": {"lat": 31.1434, "lon": 121.8052, "name": "Shanghai (Pudong)", "tz": "Asia/Shanghai", "station": "ZSPD", "unit": "C", "local_model": "jma_seamless"},
+    "Chongqing": {"lat": 29.7192, "lon": 106.6413, "name": "Chongqing (Jiangbei)", "tz": "Asia/Shanghai", "station": "ZUCK", "unit": "C", "local_model": "jma_seamless"},
+    "Shenzhen": {"lat": 22.6393, "lon": 113.8107, "name": "Shenzhen (Bao'an)", "tz": "Asia/Shanghai", "station": "ZGSZ", "unit": "C", "local_model": "jma_seamless"},
+    "HongKong": {"lat": 22.3089, "lon": 113.9146, "name": "Hong Kong (VHHH)", "tz": "Asia/Hong_Kong", "station": "VHHH", "unit": "C", "local_model": "jma_seamless"},
+    "Taipei": {"lat": 25.0777, "lon": 121.2325, "name": "Taipei (Taoyuan)", "tz": "Asia/Taipei", "station": "RCTP", "unit": "C", "local_model": "jma_seamless"},
 }
 
 # Polymarket constraints
