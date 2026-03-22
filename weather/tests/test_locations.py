@@ -28,6 +28,13 @@ POLYMARKET_STATIONS = {
     "SaoPaulo":    {"station": "SBGR", "unit": "C", "name_contains": "Guarulhos"},
     "Ankara":      {"station": "LTAC", "unit": "C", "name_contains": "Esenbo"},
     "Wellington":  {"station": "NZWN", "unit": "C", "name_contains": "Wellington"},
+    # East Asia / Greater China (°C, Wunderground / NOAA resolution)
+    "Wuhan":       {"station": "ZHHH", "unit": "C", "name_contains": "Tianhe"},
+    "Shanghai":    {"station": "ZSPD", "unit": "C", "name_contains": "Pudong"},
+    "Chongqing":   {"station": "ZUCK", "unit": "C", "name_contains": "Jiangbei"},
+    "Shenzhen":    {"station": "ZGSZ", "unit": "C", "name_contains": "Bao'an"},
+    "HongKong":    {"station": "VHHH", "unit": "C", "name_contains": "Hong Kong"},
+    "Taipei":      {"station": "RCTP", "unit": "C", "name_contains": "Taoyuan"},
 }
 
 # Approximate airport coordinates (lat, lon) for sanity check (within 0.1°)
@@ -46,6 +53,13 @@ AIRPORT_COORDS = {
     "SBGR": (-23.44, -46.47),
     "LTAC": (40.13, 32.99),
     "NZWN": (-41.33, 174.81),
+    # East Asia / Greater China
+    "ZHHH": (30.78, 114.21),
+    "ZSPD": (31.14, 121.81),
+    "ZUCK": (29.72, 106.64),
+    "ZGSZ": (22.64, 113.81),
+    "VHHH": (22.31, 113.91),
+    "RCTP": (25.08, 121.23),
 }
 
 
@@ -91,7 +105,9 @@ class TestUnitAlignment(unittest.TestCase):
 
     def test_international_cities_celsius(self):
         intl_cities = ["London", "Paris", "Seoul", "Toronto",
-                       "BuenosAires", "SaoPaulo", "Ankara", "Wellington"]
+                       "BuenosAires", "SaoPaulo", "Ankara", "Wellington",
+                       "Wuhan", "Shanghai", "Chongqing", "Shenzhen",
+                       "HongKong", "Taipei"]
         for city in intl_cities:
             self.assertEqual(LOCATIONS[city]["unit"], "C",
                              f"{city} should resolve in °C")
@@ -149,6 +165,12 @@ class TestLocalModelAssignment(unittest.TestCase):
         "Seoul": "kma_seamless",
         "Toronto": "gem_seamless",
         "Ankara": "icon_seamless",
+        "Wuhan": "jma_seamless",
+        "Shanghai": "jma_seamless",
+        "Chongqing": "jma_seamless",
+        "Shenzhen": "jma_seamless",
+        "HongKong": "jma_seamless",
+        "Taipei": "jma_seamless",
     }
     # Cities without local models (no regional NWP available)
     NO_LOCAL_MODEL = ["BuenosAires", "SaoPaulo", "Wellington"]
