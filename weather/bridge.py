@@ -184,7 +184,13 @@ class CLOBWeatherBridge:
             })
 
         logger.info("Bridge: fetched %d active weather markets", len(markets))
+        self._last_events_raw = events
         return markets
+
+    @property
+    def last_events_raw(self) -> list[dict]:
+        """Raw event dicts from the most recent fetch_weather_markets call."""
+        return getattr(self, "_last_events_raw", [])
 
     # ------------------------------------------------------------------
     # Portfolio & positions
