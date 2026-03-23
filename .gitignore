@@ -35,3 +35,7 @@ backtest_report.json
 # One-off audit/ops docs
 WEATHER_GULLY_AUDIT.md
 WEATHER_GULLY_OPS_FIXES.md
+
+
+# python
+.venv
